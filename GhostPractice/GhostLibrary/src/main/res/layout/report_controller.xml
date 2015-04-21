@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:orientation="vertical"
+    android:padding="10dp" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+    <include layout="@layout/report_header" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <TextView
+        android:id="@+id/RC_userName"
+        style="@style/zHeaderText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:textColor="@color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp" >
+
+        <Button
+            android:id="@+id/RC_toggleFinance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textOff="Financial Status"
+            style="@style/zButton"
+            android:text="Financial Status" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <Button
+            android:id="@+id/RC_toggleFeeTarget"
+            android:layout_width="match_parent"
+            style="@style/zButton"
+            android:layout_height="wrap_content"
+            android:text="Fee Target Progress"
+             />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <Button
+            android:id="@+id/RC_toggleMatter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/zButton"
+            android:text="Matter Analysis" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <ImageView
+            android:id="@+id/RC_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.3"
+            android:scaleType="fitStart"
+            android:src="@drawable/launch_320x480" />
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>

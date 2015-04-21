@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <include layout="@layout/header" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:padding="10dp"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/PF_matterName"
+                style="@style/zHeaderText2"
+                android:text="Matter Name" android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:textColor="@color/blue" />
+
+
+
+            <LinearLayout android:id="@+id/PF_layout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_below="@id/PF_matterName"
+                android:orientation="horizontal"
+                android:padding="3dp" >
+
+                <TextView
+                    style="@style/zSmallText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:paddingRight="20dp"
+                    android:text="Time Based Task" />
+
+                <ToggleButton
+                    style="@android:style/Widget.DeviceDefault.Button.Toggle"
+                    android:id="@+id/PF_toggle"
+                    android:layout_width="130dp"
+                    android:layout_height="50dp"
+                    android:checked="true"
+                    android:text="Time Based Task"
+                    android:textOff="Time Based Off"
+                    android:textOn="Time Based On" />
+            </LinearLayout>
+
+
+
+            <Spinner
+                android:id="@+id/PF_hourSpinner"
+                android:layout_width="match_parent"
+                android:layout_below="@id/PF_layout1"
+                android:layout_height="wrap_content"
+                android:visibility="visible" />
+
+
+            <Spinner
+                android:id="@+id/PF_minuteSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/PF_hourSpinner"
+                android:visibility="visible" />
+
+
+            <Spinner
+                android:id="@+id/PF_tariffSpinner"
+                android:layout_width="match_parent"
+                android:layout_marginTop="30dp"
+                android:layout_below="@id/PF_minuteSpinner"
+                android:layout_height="wrap_content" />
+
+
+            <EditText
+                android:id="@+id/PF_narration"
+                style="@style/zSmallTextBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:hint="Fee Narration"
+                android:layout_below="@id/PF_tariffSpinner"
+                android:padding="10dp" />
+
+
+            <LinearLayout
+                android:id="@+id/PF_layout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/PF_narration"
+                android:padding="3dp" >
+
+                <TextView
+                    style="@style/zSmallText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:paddingRight="10dp"
+                    android:text="Amount:" />
+
+                <EditText
+                    android:id="@+id/PF_amount"
+                    style="@style/zHeaderText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:gravity="right"
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/xborder_rounded_corners"
+                android:gravity="center"
+                android:layout_below="@id/PF_layout2"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <Button
+                    android:id="@+id/PF_btnCalculate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Calculate Fee"
+                    style="@style/zButton" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"/>
+
+                <Button
+                    android:id="@+id/PF_btnPost"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:text="Send to Office"
+                    style="@style/zButton"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

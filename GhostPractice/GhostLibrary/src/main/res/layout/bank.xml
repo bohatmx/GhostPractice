@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/xwhite_rounded_corners"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/BANK_name"
+        style="@style/zSmallTextBold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/blue" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/xborder"
+        android:gravity="left|center"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <TextView
+            style="@style/zSmallText"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="Balance:"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/BANK_balance"
+            style="@style/zSmallTextBold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/xborder"
+        android:gravity="left|center"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <TextView
+            style="@style/zSmallText"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="Receipts:"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/BANK_receipts"
+            style="@style/zSmallTextBold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/xborder"
+        android:gravity="left|center"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <TextView
+            style="@style/zSmallText"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="Date Reconciled:"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/BANK_dateReconciled"
+            style="@style/zSmallTextBold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textColor="@color/purple" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/xborder"
+        android:gravity="left|center"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <TextView
+            style="@style/zSmallText"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="Reconciled:"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/BANK_reconciledAmt"
+            style="@style/zSmallTextBold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

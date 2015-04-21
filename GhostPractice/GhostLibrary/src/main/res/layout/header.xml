@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/HEADER_layout"
+    android:layout_width="match_parent"
+    android:layout_height="44dp"
+    android:background="@color/purple"
+    android:gravity="left|center"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/logo_29"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/HEADER_progress"
+        style="@android:style/Widget.ProgressBar.Small.Inverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="10dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/HEADER_title"
+        style="@style/zHeaderText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right|center"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/HEADER_count"
+            style="@style/zNormalTextBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/xbluedark_oval"
+            android:text="00"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/MS_btnReports"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="  Reports  "
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

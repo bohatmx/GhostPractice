@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/FEI_txtNumber"
+        android:background="@drawable/xpurple_oval"
+        android:text="00"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/FEI_txtName"
+        android:text="Fee Earner Name"
+        style="@style/zNormalText"
+        android:layout_toRightOf="@id/FEI_txtNumber"
+        android:textSize="20sp" android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

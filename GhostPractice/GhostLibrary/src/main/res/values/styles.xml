@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Numbers">
+        <item name="android:inputType">number</item>
+    </style>
+
+    <!-- ############################################################################ -->
+
+    <style name="zHeader">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">5sp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="zImage">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">5sp</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="zHeaderText" parent="android:TextAppearance.Large">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_gravity">left</item>
+    </style>
+
+    <style name="zHeaderText2" parent="android:TextAppearance.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_gravity">left</item>
+    </style>
+
+    <style name="zListText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:layout_gravity">left</item>
+    </style>
+
+    <style name="zTinyText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:layout_gravity">left</item>
+    </style>
+
+    <style name="zTinierText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:layout_gravity">left</item>
+    </style>
+
+    <style name="zTinyTextBold">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_gravity">left</item>
+    </style>
+
+    <style name="zNormalText" parent="android:TextAppearance.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:layout_gravity">left</item>
+    </style>
+
+    <style name="zNormalTextBold" parent="android:TextAppearance.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_gravity">left</item>
+    </style>
+
+    <style name="zSmallText" parent="android:TextAppearance.Small">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:color">#000000</item>
+        <item name="android:layout_gravity">left</item>
+    </style>
+    <style name="zButton" parent="android:TextAppearance.Small">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@color/purple</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="zSmallTextBold" parent="android:TextAppearance.Small">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:color">#000000</item>
+        <item name="android:layout_gravity">left</item>
+    </style>
+
+    <style name="zList">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="zImageButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="zTabEditText" parent="android:TextAppearance.Medium">
+        <item name="android:layout_width">180dp</item>
+        <item name="android:layout_height">50dip</item>
+        <item name="android:layout_margin">5dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_gravity">left</item>
+    </style>
+
+    <style name="zEditText" parent="android:TextAppearance.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_margin">5dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_gravity">left|center</item>
+    </style>
+
+    <style name="zSpinnerNoArrow">
+        <item name="android:background">@android:drawable/btn_default</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:layout_width">160dp</item>
+        <item name="android:layout_height">35dp</item>
+    </style>
+
+    <style name="zTransparent">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    <style name="time_label">
+        <item name="android:textSize">@dimen/time_label_size</item>
+        <item name="android:textColor">@color/numbers_text_color</item>
+    </style>
+
+    <style name="ampm_label">
+        <item name="android:textSize">@dimen/ampm_label_size</item>
+        <item name="android:textColor">@color/ampm_text_color</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="day_of_week_label_condensed" />
+    <!-- APP THEMES -->
+    <style name="BlueTheme" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/blue_700</item>
+        <item name="colorPrimaryDark">@color/blue_900</item>
+        <item name="android:actionBarStyle">@style/actionBarStyle</item>
+        <item name="android:textViewStyle">@style/RobotoTextStyle</item>
+        <item name="android:buttonStyle">@style/RobotoButtonStyle</item>
+    </style>
+
+    <style name="RobotoTextStyle" parent="android:Widget.Holo.TextView">
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="ThemeNoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/indigo_500</item>
+        <item name="colorPrimaryDark">@color/indigo_700</item>
+        <item name="android:actionBarStyle">@style/actionBarStyle</item>
+        <item name="android:textViewStyle">@style/RobotoTextStyle</item>
+        <item name="android:buttonStyle">@style/RobotoButtonStyle</item>
+    </style>
+
+    <style name="RobotoTextViewStyle" parent="android:Widget.TextView">
+        <item name="android:fontFamily">sans-serif-thin</item>
+    </style>
+
+    <style name="RedTheme" parent="Theme.AppCompat.Light">
+        <item name="android:windowTitleStyle">@style/actionBarStyle</item>
+        <item name="colorPrimary">@color/red_800</item>
+        <item name="colorPrimaryDark">@color/red_900</item>
+        <item name="android:textViewStyle">@style/RobotoTextStyle</item>
+        <item name="android:buttonStyle">@style/RobotoButtonStyle</item>
+    </style>
+
+    <style name="TealTheme" parent="Theme.AppCompat.Light">
+        <item name="android:windowTitleStyle">@style/actionBarStyle</item>
+        <item name="colorPrimary">@color/teal_800</item>
+        <item name="colorPrimaryDark">@color/teal_900</item>
+        <item name="android:textViewStyle">@style/RobotoTextStyle</item>
+        <item name="android:buttonStyle">@style/RobotoButtonStyle</item>
+    </style>
+
+    <style name="PinkTheme" parent="Theme.AppCompat.Light">
+        <item name="android:windowTitleStyle">@style/actionBarStyle</item>
+        <item name="colorPrimary">@color/pink_800</item>
+        <item name="colorPrimaryDark">@color/pink_900</item>
+        <item name="android:textViewStyle">@style/RobotoTextStyle</item>
+        <item name="android:buttonStyle">@style/RobotoButtonStyle</item>
+    </style>
+
+    <style name="IndigoTheme" parent="Theme.AppCompat.Light">
+        <item name="android:windowTitleStyle">@style/actionBarStyle</item>
+        <item name="colorPrimary">@color/indigo_500</item>
+        <item name="colorPrimaryDark">@color/indigo_700</item>
+        <item name="android:textViewStyle">@style/RobotoTextStyle</item>
+        <item name="android:buttonStyle">@style/RobotoButtonStyle</item>
+    </style>
+
+    <style name="CyanTheme" parent="Theme.AppCompat.Light">
+        <item name="android:windowTitleStyle">@style/actionBarStyle</item>
+        <item name="colorPrimary">@color/cyan_800</item>
+        <item name="colorPrimaryDark">@color/cyan_900</item>
+        <item name="android:textViewStyle">@style/RobotoTextStyle</item>
+        <item name="android:buttonStyle">@style/RobotoButtonStyle</item>
+    </style>
+
+    <style name="OrangeTheme" parent="Theme.AppCompat.Light">
+        <item name="android:windowTitleStyle">@style/actionBarStyle</item>
+        <item name="colorPrimary">@color/orange_800</item>
+        <item name="colorPrimaryDark">@color/orange_900</item>
+        <item name="android:textViewStyle">@style/RobotoTextStyle</item>
+        <item name="android:buttonStyle">@style/RobotoButtonStyle</item>
+    </style>
+
+    <style name="PurpleTheme" parent="Theme.AppCompat.Light">
+        <item name="android:windowTitleStyle">@style/actionBarStyle</item>
+        <item name="colorPrimary">@color/purple_800</item>
+        <item name="colorPrimaryDark">@color/purple_900</item>
+        <item name="android:textViewStyle">@style/RobotoTextStyle</item>
+        <item name="android:buttonStyle">@style/RobotoButtonStyle</item>
+    </style>
+
+    <style name="NoActionBarTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowTitleStyle">@style/actionBarStyle</item>
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimaryDark">@color/background_floating_material_dark</item>
+    </style>
+    <style name="Pager">
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="PagerSmall">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="actionBarStyle" parent="@android:style/TextAppearance.Small">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@color/blue</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="RobotoButtonStyle" parent="android:Widget.Holo.Button">
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+</resources>

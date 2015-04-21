@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:padding="10dp"
+    android:orientation="vertical" >
+
+    <include layout="@layout/report_header" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/FSB_branchName"
+                style="@style/zHeaderText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Branch name"
+                android:textColor="@color/black" />
+
+            <TextView
+                style="@style/zNormalTextBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Business Status"
+                android:textColor="@color/blue" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/xwhite_rounded_corners"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/xborder"
+                    android:gravity="left|center"
+                    android:orientation="horizontal"
+                    android:padding="5dp" >
+
+                    <TextView
+                        style="@style/zSmallText"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/business_debtors"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/FSB_businessDebtors"
+                        style="@style/zNormalTextBold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="0.00"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/xborder"
+                    android:gravity="left|center"
+                    android:orientation="horizontal"
+                    android:padding="5dp" >
+
+                    <TextView
+                        style="@style/zSmallText"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/business_creditors"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/FSB_businessCreditors"
+                        style="@style/zNormalTextBold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="0.00"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/xborder"
+                    android:gravity="left|center"
+                    android:orientation="horizontal"
+                    android:padding="5dp" >
+
+                    <TextView
+                        style="@style/zSmallText"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="Banks Total:"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/FSB_banksTotal"
+                        style="@style/zNormalTextBold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="0.00"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/xborder"
+                    android:gravity="left|center"
+                    android:orientation="horizontal"
+                    android:padding="5dp" >
+
+                    <TextView
+                        style="@style/zSmallText"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pending_disb"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/FSB_pending"
+                        style="@style/zNormalTextBold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="0.00"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/xborder"
+                    android:gravity="left|center"
+                    android:orientation="horizontal"
+                    android:padding="5dp" >
+
+                    <TextView
+                        style="@style/zSmallText"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/unbilled_bal"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/FSB_unbilled"
+                        style="@style/zNormalTextBold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="0.00"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/xborder"
+                    android:gravity="left|center"
+                    android:orientation="horizontal"
+                    android:padding="5dp" >
+
+                    <TextView
+                        style="@style/zSmallText"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/vat"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/FSB_VAT"
+                        style="@style/zNormalTextBold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="0.00"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/xborder"
+                    android:gravity="left|center"
+                    android:orientation="horizontal"
+                    android:padding="5dp" >
+
+                    <TextView
+                        style="@style/zSmallText"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="Available for Transfer:"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/FSB_avTransfer"
+                        style="@style/zNormalTextBold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="0.00"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <LinearLayout
+                    android:id="@+id/FSB_BusinessStatus_banks"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/zNormalTextBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Trust Status"
+                android:textColor="@color/blue" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/xwhite_rounded_corners"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/xborder"
+                    android:gravity="left|center"
+                    android:orientation="horizontal"
+                    android:padding="5dp" >
+
+                    <TextView
+                        style="@style/zSmallText"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="Banks Total:"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/FSBt_banksTotal"
+                        style="@style/zNormalTextBold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="0.00"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/xborder"
+                    android:gravity="left|center"
+                    android:orientation="horizontal"
+                    android:padding="5dp" >
+
+                    <TextView
+                        style="@style/zSmallText"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/trust_creditors"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/FSBt_trustCreditors"
+                        style="@style/zNormalTextBold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="0.00"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/xborder"
+                    android:gravity="left|center"
+                    android:orientation="horizontal"
+                    android:padding="5dp" >
+
+                    <TextView
+                        style="@style/zSmallText"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/investments"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/FSBt_investments"
+                        style="@style/zNormalTextBold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="0.00"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <LinearLayout
+                    android:id="@+id/FSB_TrustStatus_banks"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

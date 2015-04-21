@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/xborder"
+        android:gravity="left|center"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/zSmallText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Achieved:"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/MTD_achieved"
+            style="@style/zNormalTextBold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/xborder"
+        android:gravity="left|center"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/zSmallText"
+            android:layout_width="wrap_content" android:gravity="left"
+            android:layout_height="wrap_content"
+            android:text="Estimated Target:"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/MTD_estimated"
+            style="@style/zNormalTextBold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/xborder"
+        android:gravity="left|center"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/zSmallText"
+            android:layout_width="wrap_content" android:gravity="left"
+            android:layout_height="wrap_content"
+            android:text="Invoiced:"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/MTD_invoiced"
+            style="@style/zNormalTextBold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/xborder"
+        android:gravity="left|center"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/zSmallText"
+            android:layout_width="wrap_content" android:gravity="left"
+            android:layout_height="wrap_content"
+            android:text="Unbilled:"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/MTD_unbilled"
+            style="@style/zNormalTextBold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/xborder"
+        android:gravity="left|center"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/zSmallText"
+            android:layout_width="wrap_content" android:gravity="left"
+            android:layout_height="wrap_content"
+            android:text="Total:"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/MTD_total"
+            style="@style/zNormalTextBold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    
+
+</LinearLayout>

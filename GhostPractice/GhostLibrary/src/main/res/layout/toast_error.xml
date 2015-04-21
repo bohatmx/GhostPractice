@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/translucent_red"
+    android:gravity="center"
+    android:padding="10dp"
+    android:orientation="horizontal"
+     >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingRight="10dip" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="2dip" >
+
+            <ImageView
+                android:id="@+id/imgTOASTOK"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:paddingLeft="5dip"
+                android:paddingRight="5dip"
+                android:src="@drawable/error48" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+             >
+
+            <TextView
+                android:id="@+id/txtTOASTMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Message of Toast"
+                android:textColor="@color/white"
+                style="@style/zNormalText" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

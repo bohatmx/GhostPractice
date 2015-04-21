@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- for translation -->
+    <string name="matter_search">Matter Search</string>
+    <string name="search">Search</string>
+    <string name="business_bal">Business Balance</string>
+    <string name="trust_balance">Trust Balance</string>
+    <string name="investment_bal">Investment Balance</string>
+    <string name="reserve_trust">Reserve Trust</string>
+    <string name="time_based">Time Based Activity</string>
+    <string name="duration">Duration</string>
+    <string name="business_debtors">Business Debtors</string>
+    <string name="business_creditors">Business Creditors</string>
+    <string name="vat">VAT</string>
+    <string name="trust_status">Trust Status</string>
+    <string name="trust">Trust</string>
+    <string name="trust_creditors">Trust Creditors</string>
+    <string name="investments">Investments</string>
+    <string name="select_act_code">Select Activity Code</string>
+    <string name="activity_codes">Activity Codes</string>
+    <string name="current_balance">Current Balance</string>
+    <string name="investment_trust">Investment Trust</string>
+    <string name="unbilled_bal">Unbilled Balance</string>
+    <string name="pending_disb">Pending Disbursements</string>
+    <string name="business">Business</string>
+
+    <string name="reports">Reports</string>
+    <string name="about">About</string>
+    <string name="app_name">GhostLibrary</string>
+
+    <string name="done_label">Done</string>
+    <string name="day_picker_description">Month grid of days</string>
+    <string name="year_picker_description">Year list</string>
+    <string name="select_day">Select month and day</string>
+    <string name="select_year">Select year</string>
+    <string name="item_is_selected">%1$s selected</string>
+    <string name="sans_serif" translatable="false">sans-serif</string>
+    <string name="day_of_week_label_typeface" translatable="false">sans-serif</string>
+    <string name="time_placeholder" translatable="false">--</string>
+    <string name="time_separator" translatable="false">:</string>
+    <string name="hour_picker_description">Hours circular slider</string>
+
+    <string name="minute_picker_description">Minutes circular slider</string>
+    <string name="radial_numbers_typeface" translatable="false">sans-serif</string>
+    <string name="select_hours">Select hours</string>
+    <string name="select_minutes">Select minutes</string>
+</resources>

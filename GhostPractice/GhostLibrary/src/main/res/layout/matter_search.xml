@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:padding="@dimen/mon_padding"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/MS_searchLayout"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingTop="5dp">
+
+
+
+        <ImageView
+            android:id="@+id/MS_btnSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/mon_margin"
+            android:tint="@color/primary_material_dark"
+            android:src="@android:drawable/ic_menu_search"
+            android:text="Search" />
+        <EditText
+            android:id="@+id/MS_editSearch"
+            android:layout_toLeftOf="@id/MS_btnSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Matter Search Text"
+            android:lines="1"
+            android:maxLines="1"
+            android:singleLine="true" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/splash"
+        android:layout_below="@id/MS_searchLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/launch_640x960" />
+
+    <ListView
+        android:layout_below="@id/MS_searchLayout"
+        android:id="@+id/MS_list"
+        android:layout_marginTop="@dimen/mon_padding"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="@dimen/mon_divider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

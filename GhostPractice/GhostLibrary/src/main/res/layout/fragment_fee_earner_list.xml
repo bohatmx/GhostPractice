@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/grey"
+    android:padding="10dp"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/FEL_layout1"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:padding="15dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/zHeaderText"
+            android:textStyle="normal"
+            android:text="Fee Earner List"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            style="@style/zHeaderText"
+            android:textStyle="normal"
+            android:text="00"
+            android:id="@+id/FEL_txtCount"
+            android:textColor="@color/purple"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/FEL_list" android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:padding="10dp"
+        android:layout_below="@id/FEL_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

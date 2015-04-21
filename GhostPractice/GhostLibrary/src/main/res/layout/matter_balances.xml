@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/xwhite_rounded_corners"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/xborder"
+        android:gravity="left|center"
+        android:orientation="horizontal"
+        android:padding="3dp" >
+
+        <TextView
+            style="@style/zSmallText"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_width="wrap_content"
+            android:text="Business:"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/MAB_business"
+            style="@style/zNormalTextBold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/xborder"
+        android:gravity="left|center"
+        android:orientation="horizontal"
+        android:padding="3dp" >
+
+        <TextView
+            style="@style/zSmallText"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_width="wrap_content"
+            android:text="Trust Balance:"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/MAB_trustBal"
+            style="@style/zNormalTextBold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/xborder"
+        android:gravity="left|center"
+        android:orientation="horizontal"
+        android:padding="3dp" >
+
+        <TextView
+            style="@style/zSmallText"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_width="wrap_content"
+            android:text="Investments:"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/MAB_invest"
+            style="@style/zNormalTextBold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/xborder"
+        android:gravity="left|center"
+        android:orientation="horizontal"
+        android:padding="3dp" >
+
+        <TextView
+            style="@style/zSmallText"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_width="wrap_content"
+            android:text="Unbilled:"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/MAB_unbilled"
+            style="@style/zNormalTextBold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/xborder"
+        android:gravity="left|center"
+        android:orientation="horizontal"
+        android:padding="3dp" >
+
+        <TextView
+            style="@style/zSmallText"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_width="wrap_content"
+            android:text="Pending Disb.:"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/MAB_pending"
+            style="@style/zNormalTextBold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+   
+
+</LinearLayout>

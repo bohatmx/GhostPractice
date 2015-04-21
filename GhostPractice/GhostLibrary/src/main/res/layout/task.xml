@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:padding="10dp"
+        android:layout_height="wrap_content">
+
+
+        <include
+            layout="@layout/header_m"
+            android:id="@+id/TASK_header" />
+
+        <TextView
+            android:id="@+id/TASK_name"
+            style="@style/zHeaderText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_below="@id/TASK_header"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/black"
+            android:text="Matter Name" />
+
+        <TextView
+            android:id="@+id/TASK_dateLabel"
+            style="@style/zNormalText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_below="@id/TASK_name"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/grey"
+            android:layout_marginLeft="5dp"
+            android:text="Due Date" />
+
+
+        <Button
+            android:text="Date"
+            android:id="@+id/TASK_btnDate"
+            android:layout_below="@id/TASK_dateLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <RelativeLayout
+            android:id="@+id/TASK_lay3"
+            android:layout_width="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/TASK_btnDate"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/TASK_label"
+                android:text="Notify when complete"
+                android:layout_width="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content" />
+
+            <Switch
+                android:layout_marginLeft="20dp"
+                android:id="@+id/TASK_switch"
+                android:layout_toRightOf="@id/TASK_label"
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:checked="true"
+                android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+
+        <EditText
+            android:id="@+id/TASK_desc"
+            style="@style/zNormalText"
+            android:layout_below="@id/TASK_lay3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Task Description"
+            android:padding="5dp"
+            android:textColor="@color/purple" />
+
+
+        <Button
+            android:id="@+id/TASK_btnPost"
+            android:layout_width="match_parent"
+            android:layout_marginTop="40dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TASK_desc"
+            android:text="Send to Office"
+            android:layout_marginBottom="40dp"
+            android:textStyle="normal" />
+
+    </RelativeLayout>
+</RelativeLayout>
