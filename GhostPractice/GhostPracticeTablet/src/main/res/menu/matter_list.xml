@@ -1,0 +1,31 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/ML_reports"
+        android:showAsAction="always"
+        android:title="Access Reports"
+        android:titleCondensed="Reports"/>
+    <item
+        android:id="@+id/ML_postFee"
+        android:showAsAction="always"
+        android:title="Post Fee"
+        android:titleCondensed="Post Fee"/>
+    <item
+        android:id="@+id/ML_postUnbillable"
+        android:showAsAction="always"
+        android:title="Post Unbillable"
+        android:titleCondensed="Post Unbillable"/>
+    <item
+        android:id="@+id/ML_postNote"
+        android:showAsAction="always"
+        android:title="Post Note"
+        android:titleCondensed="Post Note"/>
+    <!--
+         <item
+        android:id="@+id/ML_assignTask"
+        android:showAsAction="always"
+        android:title="Assign Task"
+        android:titleCondensed="Assign Task"/>
+    -->
+
+</menu>

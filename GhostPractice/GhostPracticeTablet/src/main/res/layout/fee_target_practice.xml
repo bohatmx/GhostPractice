@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/xgrey_white_gradient"
+    android:orientation="vertical" >
+
+    <include layout="@layout/report_header" >
+    </include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@android:style/TextAppearance.Medium"
+            	android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Practice Totals"
+                android:textColor="@color/purple" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/xwhite_rounded_corners"
+                android:gravity="left|center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@android:style/TextAppearance.Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Invoiced MTD Total:"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/FTP_invoicedTotal"
+                    style="@android:style/TextAppearance.Medium"
+            android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/zNormalTextBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Recorded MTD"
+                android:textColor="@color/blue" />
+
+            <LinearLayout
+                android:id="@+id/FTP_recordedMTD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="@drawable/xwhite_rounded_corners" />
+
+            <TextView
+                style="@style/zNormalTextBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Recorded YTD"
+                android:textColor="@color/blue" />
+
+            <LinearLayout
+                android:id="@+id/FTP_recordedYTD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="@drawable/xwhite_rounded_corners" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

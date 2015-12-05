@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Numbers">
+        <item name="android:inputType">number</item>
+    </style>
+
+    <!-- ############################################################################ -->
+
+    <style name="activated" parent="android:Theme.Holo">
+        <item name="android:background">?android:attr/activatedBackgroundIndicator</item>
+    </style>
+
+    <style name="zHeader">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">5sp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="zImage">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">5sp</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="zHeaderText" parent="android:TextAppearance.Large">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_gravity">left</item>
+    </style>
+
+    <style name="zListText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:layout_gravity">left</item>
+    </style>
+
+    <style name="zTinyText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:layout_gravity">left</item>
+    </style>
+
+    <style name="zTinierText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:layout_gravity">left</item>
+    </style>
+
+    <style name="zTinyTextBold">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_gravity">left</item>
+    </style>
+
+    <style name="zNormalText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_gravity">left</item>
+    </style>
+
+    <style name="zNormalTextBold">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_gravity">left</item>
+    </style>
+
+    <style name="zSmallText" parent="android:TextAppearance.Small">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:color">#000000</item>
+        <item name="android:layout_gravity">left</item>
+    </style>
+
+    <style name="zSmallTextBold" parent="android:TextAppearance.Small">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:color">#000000</item>
+        <item name="android:layout_gravity">left</item>
+    </style>
+
+    <style name="zList">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="zImageButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="zTabEditText" parent="android:TextAppearance.Medium">
+        <item name="android:layout_width">180dp</item>
+        <item name="android:layout_height">50dip</item>
+        <item name="android:layout_margin">5dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_gravity">left</item>
+    </style>
+
+    <style name="zEditText" parent="android:TextAppearance.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_margin">5dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_gravity">left|center</item>
+    </style>
+
+    <style name="zSpinnerNoArrow">
+        <item name="android:background">@android:drawable/btn_default</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:layout_width">160dp</item>
+        <item name="android:layout_height">35dp</item>
+    </style>
+
+    <style name="zTransparent">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+</resources>

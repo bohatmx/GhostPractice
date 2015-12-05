@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/xgrey_white_gradient"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <include layout="@layout/header" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="3dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="3dp" >
+
+                <LinearLayout
+                    android:id="@+id/MD_topLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:background="@drawable/xborder_rounded_corners"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/MD_matterName"
+                        style="@style/zNormalTextBold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/MD_clientName"
+                        style="@style/zNormalTextBold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:textColor="@color/purple_lite" />
+
+                    <TextView
+                        android:id="@+id/MD_ownerName"
+                        style="@style/zNormalTextBold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/MD_matterID"
+                        style="@style/zNormalTextBold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:padding="3dp" >
+
+                    <ImageView
+                        android:id="@+id/MD_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/matter" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="3dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/xwhite_rounded_corners"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/xborder"
+                    android:orientation="horizontal"
+                    android:padding="3dp" >
+
+                    <TextView
+                        style="@style/zSmallText"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center"
+                        android:text="Business Balance:"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/MD_businessBalance"
+                        style="@style/zNormalTextBold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center"
+                        android:gravity="right"
+                        android:hint="0.00" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/xborder"
+                    android:orientation="horizontal"
+                    android:padding="3dp" >
+
+                    <TextView
+                        style="@style/zSmallText"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center"
+                        android:text="Trust Balance:"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/MD_trustBalance"
+                        style="@style/zNormalTextBold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center"
+                        android:gravity="right"
+                        android:hint="0.00" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/xborder"
+                    android:orientation="horizontal"
+                    android:padding="3dp" >
+
+                    <TextView
+                        style="@style/zSmallText"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center"
+                        android:text="Investment Trust:"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/MD_investTrust"
+                        style="@style/zNormalTextBold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center"
+                        android:gravity="right"
+                        android:hint="0.00" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/xborder"
+                    android:orientation="horizontal"
+                    android:padding="3dp" >
+
+                    <TextView
+                        style="@style/zSmallText"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center"
+                        android:text="Current Balance:"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/MD_currentBalance"
+                        style="@style/zNormalTextBold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center"
+                        android:gravity="right"
+                        android:hint="0.00" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/xborder"
+                    android:orientation="horizontal"
+                    android:padding="3dp" >
+
+                    <TextView
+                        style="@style/zSmallText"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center"
+                        android:text="Unbilled:"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/MD_unbilled"
+                        style="@style/zNormalTextBold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center"
+                        android:gravity="right"
+                        android:hint="0.00" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/xborder"
+                    android:orientation="horizontal"
+                    android:padding="3dp" >
+
+                    <TextView
+                        style="@style/zSmallText"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center"
+                        android:text="Pending Disb.:"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/MD_pendingDisb"
+                        style="@style/zNormalTextBold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center"
+                        android:gravity="right"
+                        android:hint="0.00" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/xborder"
+                    android:orientation="horizontal"
+                    android:padding="3dp" >
+
+                    <TextView
+                        style="@style/zSmallText"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center"
+                        android:text="Reserve Trust:"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/MD_reserveTrust"
+                        style="@style/zNormalTextBold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center"
+                        android:gravity="right"
+                        android:hint="0.00" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="3dp" >
+
+                <TextView
+                    style="@style/zSmallText"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:text="Legacy Account:"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/MD_legacy"
+                    style="@style/zNormalTextBold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/zNormalTextBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:padding="5dp"
+                android:text="Posting Actions"
+                android:textColor="@color/grey" />
+
+            <LinearLayout
+                android:id="@+id/MD_btnContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/xwhite_beige_rounded_corners"
+                android:orientation="horizontal"
+                android:padding="5dp" >
+
+                <Button
+                    android:id="@+id/MD_btnPostFee"
+                    style="@style/zSmallText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Fee" />
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/MD_btnPostUnbillable"
+                    style="@style/zSmallText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Unbillable" />
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/MD_btnPostNote"
+                    style="@style/zSmallText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Note" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

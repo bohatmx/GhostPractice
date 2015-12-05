@@ -1,0 +1,15 @@
+<resources>
+
+    <string name="app_name">GhostPracticeTablet</string>
+    <string name="title_matterdto_detail">MatterDTO Detail</string>
+    <string name="title_matterdto_list">Matters</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_registration">GhostPractice Device Activation</string>
+    <string name="title_matter_detail">Matter Detail</string>
+    <string name="title_matter_list">GhostPractice Mobile - Matters</string>
+    <string name="title_reportcontroller_detail">ReportController Detail</string>
+    <string name="title_reportcontroller_list">Reports</string>
+    <string name="title_activity_report_controller">GhostPractice Mobile - Reports</string>
+
+</resources>

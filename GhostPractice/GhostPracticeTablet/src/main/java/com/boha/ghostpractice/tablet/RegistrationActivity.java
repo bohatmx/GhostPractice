@@ -1,5 +1,9 @@
-package com.boha.ghostpractice;
+package com.boha.ghostpractice.tablet;
 
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
+
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -8,9 +12,8 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Vibrator;
 import android.preference.PreferenceManager;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
+import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -21,69 +24,41 @@ import com.boha.ghostpractice.data.WebServiceResponse;
 import com.boha.ghostpractice.util.CommsUtil;
 import com.boha.ghostpractice.util.ElapsedTimeUtil;
 import com.boha.ghostpractice.util.NetworkUnavailableException;
-import com.boha.ghostpractice.util.SharedUtil;
 import com.boha.ghostpractice.util.Statics;
 import com.boha.ghostpractice.util.ToastUtil;
-import com.boha.ghostpractice.util.Util;
 import com.boha.ghostpractice.util.bean.CommsException;
-import com.boha.ghostpracticephone.R;
 import com.google.gson.Gson;
 
-import java.io.UnsupportedEncodingException;
-import java.net.URLEncoder;
+public class RegistrationActivity extends Activity {
 
-public class ProvisioningActivity extends ActionBarActivity {
 	String activationCode;
-	ProgressBar bar;
-	EditText editCode;
-	static final String LOG = "Provisioning";
-	Gson gson = new Gson();
-	WebServiceResponse response;
-	Vibrator vb;
-	Button btnSubmit;
-	SharedPreferences sp;
-
-	@Override
-	public void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-        Log.w(LOG, "onCreate ...................");
-		setContentView(R.layout.provision);
-		setFields();
-		
-		//TODO - Remove when done
-		saveTestPreferences();
-        checkPrefs();
-		ActionBar bar = getSupportActionBar();
-		String name = SharedUtil.getPracticeName(getApplicationContext());
-		if (name == null) {
-			name = "GhostPratice";
-		}
-		if (bar != null) {
-			Util.setGPActionBar(getApplicationContext(), bar, name);
-		}
-		
-	}
-    private void checkPrefs() {
-        if (isUserProvisioned()) {
-            startSearch();
-            finish();
-        }
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_registration);
+        setFields();
+        ///saveTestPreferences();
     }
-	@Override
+    @Override
 	protected void onResume() {
 		super.onResume();
-
+		if (isUserProvisioned()) {
+			startSearch();
+			finish();
+		}
 	}
-	void setFields() {
-		sp = PreferenceManager
+    private void setFields() {
+    	
+    	sp = PreferenceManager
 				.getDefaultSharedPreferences(getApplicationContext());
 		vb = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
-		bar = (ProgressBar) findViewById(R.id.MAIN_progress);
+		
+		bar = (ProgressBar) findViewById(R.id.MAIN_bar);
 		editCode = (EditText) findViewById(R.id.MAIN_activation);
 		btnSubmit = (Button) findViewById(R.id.MAIN_submit);
 		btnSubmit.setOnClickListener(new View.OnClickListener() {
 
-			@Override
+			//@Override
 			public void onClick(View v) {
 				if (editCode.getText().toString().equalsIgnoreCase("")) {
 					ToastUtil.errorToast(getApplicationContext(),
@@ -101,27 +76,34 @@ public class ProvisioningActivity extends ActionBarActivity {
 
 			}
 		});
-	}
+    }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.activity_registration, menu);
+        return true;
+    }
 
-	class AppPlatformTask extends AsyncTask<Void, Void, Integer> {
+    class AppPlatformTask extends AsyncTask<Void, Void, Integer> {
 
 		@Override
 		protected Integer doInBackground(Void... params) {
 			GhostRequestDTO req = new GhostRequestDTO();
 			req.setRequestType(GhostRequestDTO.GET_APP_PLATFORM_IDS);
 			req.setAppName("GhostPractice Mobile");
-			req.setPlatformName("Android Phone");			
+			req.setPlatformName("Android Tablet");
+			
 			try {
 				String json = URLEncoder.encode(gson.toJson(req), "UTF-8");
 				response = CommsUtil.getData(Statics.URL + json, getApplicationContext());
 			} catch (CommsException e) {
-				Log.e(LOG, "Problem provisioning device", e);
+				Log.e(LOG, "Problem provisioning tablet", e);
 				return 1;
 			} catch (NetworkUnavailableException e) {
 				return 99;
 			} catch (UnsupportedEncodingException e) {
+				// TODO Auto-generated catch block
 				e.printStackTrace();
-				return 1;
+				return 2;
 			}
 			return 0;
 		}
@@ -134,14 +116,7 @@ public class ProvisioningActivity extends ActionBarActivity {
 		@Override
 		protected void onPostExecute(Integer ret) {
 			bar.setVisibility(View.GONE);
-			btnSubmit.setEnabled(true);
-			if (ret == 1) {
-				vb.vibrate(100);
-				ToastUtil.serverUnavailable(getApplicationContext());
-				return;
-			}
 			if (ret == 99) {
-				vb.vibrate(100);
 				ToastUtil.noNetworkToast(getApplicationContext());
 				return;
 			}
@@ -171,8 +146,9 @@ public class ProvisioningActivity extends ActionBarActivity {
 			req.setActivationCode(activationCode);
 			req.setAppID(sp.getInt("appID", 0));
 			req.setPlatformID(sp.getInt("platformID", 0));
-			String json = URLEncoder.encode(gson.toJson(req));
+			
 			try {
+				String json = URLEncoder.encode(gson.toJson(req), "UTF-8");
 				response = CommsUtil.getData(Statics.URL + json, getApplicationContext());
 				end = System.currentTimeMillis();
 				ElapsedData data = new ElapsedData();
@@ -185,6 +161,10 @@ public class ProvisioningActivity extends ActionBarActivity {
 				return 1;
 			} catch (NetworkUnavailableException e) {
 				return 99;
+			} catch (UnsupportedEncodingException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+				return 2;
 			}
 			return 0;
 		}
@@ -224,16 +204,13 @@ public class ProvisioningActivity extends ActionBarActivity {
 			}
 		}
 	}
-
 	void startSearch() {
 		Intent i = new Intent(getApplicationContext(),
-				MatterSearchActivity.class);
+				MatterListActivity.class);
 		startActivity(i);
 	}
 
 	boolean isUserProvisioned() {
-        Log.e(LOG, "###### Locale DisplayName: " + getResources().getConfiguration().locale.getDisplayName()
-        + " country: " + getResources().getConfiguration().locale.getCountry());
 		boolean yes = false;
 
 		int userID = sp.getInt("userID", 0);
@@ -245,16 +222,34 @@ public class ProvisioningActivity extends ActionBarActivity {
 	}
 
 	void saveUserPreferences() {
-        SharedUtil.saveUserPreferences(response,getApplicationContext());
+		Editor ed = sp.edit();
+		ed.putInt("userID", response.getUser().getUserID());
+		ed.putString("userName", response.getUser().getUserName());
+		ed.putString("deviceID", response.getDeviceID());
+		if (response.getUser().getCellphone() != null) {
+			ed.putString("cellphone", response.getUser().getCellphone());
+		}
+		if (response.getUser().getEmail() != null) {
+			ed.putString("email", response.getUser().getEmail());
+		}
+		if (response.getUser().getCompany() != null) {
+			ed.putInt("companyID", response.getUser().getCompany().getCompanyID());
+		}
+		ed.commit();
+		Log.i(LOG, "#### GP User preferences have been stored. userName: " +
+				response.getUser().getUserName());
 	}
 
 	void saveAppPreferences() {
-        SharedUtil.saveAppPreferences(response,getApplicationContext());
-
+		Editor ed = sp.edit();
+		ed.putInt("appID", response.getApp().getAppID());
+		ed.putInt("platformID", response.getPlatform().getPlatformID());
+		ed.commit();
+		Log.i(LOG, "#### GP App preferences have been stored. appID: " + response.getApp().getAppID());
 	}
 	
 	//TODO - test code. Remove when done
-	void saveTestPreferences() {
+	private void saveTestPreferences() {
 		Editor ed = sp.edit();
 		ed.putInt("userID", 336);
 		ed.putString("userName", "Test Admin User");
@@ -262,12 +257,10 @@ public class ProvisioningActivity extends ActionBarActivity {
 		ed.putString("cellphone", "0828013722");
 		ed.putString("email", "malengadev@gmail.com");		
 		ed.putInt("companyID", 17);
-        ed.putString("companyName", "Modise Boone & Drake");
 		ed.putInt("appID", 1);
 		ed.putInt("platformID", 4);
 		
 		ed.commit();
-        Log.e(LOG,"Test User prefs saved");
 	}
 	class ElapsedData {
 		public int activityID;
@@ -290,10 +283,12 @@ public class ProvisioningActivity extends ActionBarActivity {
 		}
 		
 	}
-
-    @Override
-    public void onPause() {
-        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
-        super.onPause();
-    }
+	Gson gson = new Gson();
+	WebServiceResponse response;
+    EditText editCode;
+    ProgressBar bar;
+    Button btnSubmit;
+    Vibrator vb; 
+    SharedPreferences sp;
+    static final String LOG = RegistrationActivity.class.getName();
 }

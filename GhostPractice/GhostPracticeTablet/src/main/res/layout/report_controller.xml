@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <include layout="@layout/report_header" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <TextView
+        android:id="@+id/RC_userName"
+        style="@style/zNormalTextBold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:textColor="@color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp" >
+
+        <ToggleButton
+            android:id="@+id/RC_toggleFinance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textOff="Financial Status"
+            android:textOn="Financial Status" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <ToggleButton
+            android:id="@+id/RC_toggleFeeTarget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textOff="Fee Target Progress"
+            android:textOn="Fee Target Progress" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <ToggleButton
+            android:id="@+id/RC_toggleMatter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textOff="Matter Analysis"
+            android:textOn="Matter Analysis" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <ToggleButton
+            android:id="@+id/RC_toggleAll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textOff="All Reports"
+            android:textOn="All Reports" />
+    </LinearLayout>
+
+</LinearLayout>

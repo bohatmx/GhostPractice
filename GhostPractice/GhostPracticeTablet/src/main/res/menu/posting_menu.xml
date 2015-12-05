@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/POST_MENU_postFee"
+        android:showAsAction="always"
+        android:title="Post Fee"
+        android:titleCondensed="Fee"/>
+    <item
+        android:id="@+id/POST_MENU_postUnbillable"
+        android:showAsAction="always"
+        android:title="Post Unbillable"
+        android:titleCondensed="Unbillable"/>
+    <item
+        android:id="@+id/POST_MENU_postNote"
+        android:showAsAction="always"
+        android:title="Post Note"
+        android:titleCondensed="Note"/>
+    <item
+        android:id="@+id/POST_MENU_search"
+        android:showAsAction="always"
+        android:title="Search Matters"
+        android:titleCondensed="Search Matters"/>
+    <item
+        android:id="@+id/POST_MENU_reports"
+        android:showAsAction="always"
+        android:title="Access Reports"
+        android:titleCondensed="Reports"/>
+
+</menu>
