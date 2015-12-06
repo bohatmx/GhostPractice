@@ -7,5 +7,10 @@ GhostPractice is a legal practice management application that lives on Windows a
 
 GhostPractice | GhostPractice
 ------------ | -------------
+![Alt text](/GhostPractice/GhostPracticePhone/ghostpractice-android screenshots//d01.png?raw=true "GhostPractice App") | ![Alt text](/GhostPractice/GhostPracticePhone/ghostpractice-android screenshots/d95.png?raw=true "GhostPractice App")
+
+GhostPractice | GhostPractice
+------------ | -------------
 ![Alt text](/GhostPractice/GhostPracticePhone/ghostpractice-android screenshots//d1.png?raw=true "GhostPractice App") | ![Alt text](/GhostPractice/GhostPracticePhone/ghostpractice-android screenshots/d2.png?raw=true "GhostPractice App")
+
 
